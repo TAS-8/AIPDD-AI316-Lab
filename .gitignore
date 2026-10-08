@@ -1,0 +1,11 @@
+# Virtual Environment
+aipdd_env/
+.venv/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Binary Model Weights
+*.pt
+*.onnx
+*.h5
