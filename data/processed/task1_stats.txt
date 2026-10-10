@@ -1,0 +1,5 @@
+--- Image Tensor Statistics ---
+Original Shape: (739, 415, 3)
+Original Min/Max: 0 / 255
+Preprocessed Shape: (640, 640, 3)
+Preprocessed Min/Max: 0.0 / 1.0
