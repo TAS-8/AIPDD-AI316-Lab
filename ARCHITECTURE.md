@@ -20,24 +20,10 @@ This tabular specification defines the operational data flow, primary actors, an
 
 | Category | Specification Details |
 | --- | --- |
-| **Primary System Actors** | **Security Operator:** Monitors live alerts and video feeds. <br>
-
-<br> **System Administrator:** Configures camera streams and system thresholds. <br>
-
-<br> **Automated Trigger System:** Receives and acts upon anomaly flags. |
-| **System Inputs** | - 1080p RTSP video streams at 30 FPS. <br>
-
-<br> - Administrator configuration parameters (confidence thresholds, ROI polygons). <br>
-
-<br> - Camera calibration and environment lighting sensor data. |
-| **System Outputs** | - Bounding box coordinates (x, y, w, h) mapping tracked objects. <br>
-
-<br> - JSON-formatted alert notifications via WebSocket or MQTT. <br>
-
-<br> - Persistent database log entries for detected events. |
-| **Operational Constraints** | - **Memory:** Inference operations must run within a strict 4GB VRAM footprint to support edge deployment. <br>
-
-<br> - **Bandwidth:** Network utilization for stream ingestion must not exceed 10 Mbps per active camera. |
+| **Primary System Actors** | **Security Operator:** Monitors live alerts and video feeds. <br><br> **System Administrator:** Configures camera streams and system thresholds. <br><br> **Automated Trigger System:** Receives and acts upon anomaly flags. |
+| **System Inputs** | - 1080p RTSP video streams at 30 FPS. <br><br> - Administrator configuration parameters (confidence thresholds, ROI polygons). <br><br> - Camera calibration and environment lighting sensor data. |
+| **System Outputs** | - Bounding box coordinates (x, y, w, h) mapping tracked objects. <br><br> - JSON-formatted alert notifications via WebSocket or MQTT. <br><br> - Persistent database log entries for detected events. |
+| **Operational Constraints** | - **Memory:** Inference operations must run within a strict 4GB VRAM footprint to support edge deployment. <br><br> - **Bandwidth:** Network utilization for stream ingestion must not exceed 10 Mbps per active camera. |
 
 
 ### 3. Data-Flow Diagrams
